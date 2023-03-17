@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
-    "build": "npm run clean && npm run build:client && npm run build:server"
+    "build": "npm run clean && npm run build:client && npm run build:server",
+    "build:client": "cd client && npm install && npm run build",
+    "build:server": "cd server && npm install && npm run build",
+    "clean": "rm -rf dist"
   },
   "keywords": [],
   "author": "",
