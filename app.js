@@ -12,6 +12,7 @@ const likePost = require("./routers/Like");
 const unlikePost = require("./routers/UnlikePost");
 const User = require("./routers/User");
 const Follow = require("./routers/Follow");
+const UnFollow = require("./routers/UnFollow");
 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
@@ -23,6 +24,7 @@ app.use("/api/like",likePost);
 app.use("/api/unlike",unlikePost);
 app.use("/api/user",User);
 app.use("/api/follow",Follow);
+app.use("/api/unfollow",UnFollow);
 
 const port = 4500;
 app.get("/",(req,res)=>{
