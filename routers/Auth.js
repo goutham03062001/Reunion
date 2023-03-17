@@ -1,12 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const Auth = require("../middlewares/Auth")
-const User = require("../model/User");
 const dotenv = require("dotenv");
 dotenv.config({path:"../config.env"});
 const jwt = require("jsonwebtoken");
 const {v4:uuidv4} = require("uuid");
-const { ObjectId } = require('mongodb');
 const mongoose = require("mongoose");
 // api/authenticate     GET 
 //@desc         Authenticate User

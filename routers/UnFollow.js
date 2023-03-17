@@ -3,7 +3,6 @@ const router = express.Router();
 const Auth = require("../middlewares/Auth");
 const User = require("../model/User");
 const checkAuthToken = require("../middlewares/CheckToken");
-const jwt = require("jsonwebtoken");
 
 //@route    POST /api/unfollow/:id
 //@desc     Unfollow user

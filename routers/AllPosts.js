@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Post = require("../model/Post");
 const Auth = require("../middlewares/Auth");
+
 //@api      GET /api/all_posts
 //@desc     Get all Post
 //@access   Private
